@@ -37,3 +37,23 @@ WHERE price < 10.00;
 -- (6, 'Onion Rings', 'Battered and fried to perfection.', 6.00, 'Side'),
 -- (7, 'Soda', 'Choose from a variety of classic sodas.', 2.50, 'Drink'),
 -- (8, 'Bottled Water', 'Pure and simple.', 2.00, 'Drink');
+
+-- Output
+-- [
+--   {
+--     "name": "Classic Fries",
+--     "price": "5.00"
+--   },
+--   {
+--     "name": "Onion Rings",
+--     "price": "6.00"
+--   },
+--   {
+--     "name": "Soda",
+--     "price": "2.50"
+--   },
+--   {
+--     "name": "Bottled Water",
+--     "price": "2.00"
+--   }
+-- ]
