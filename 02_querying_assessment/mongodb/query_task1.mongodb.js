@@ -20,8 +20,7 @@
 //      >>> [จากคำใบ้] > ข้อมูลที่เราต้องการอยู่ใน menu_items และตรวจสอบราคาจาก price (field)
 //      [สำหรับ mongoDB] ใช้ db.collection.find() ต้องใช้ $lt เพื่อกรอง price ที่น้อยกว่า $10
 //      [ผลลัพธ์] ต้องเป็น Classic Fries , Onion Rings , Soda , Bottled เพราะราคาน้อยกว่า $10
-
-
+//
 db.menu_items.find({ 
   price: { $lt: Decimal128("10.00") } 
 })

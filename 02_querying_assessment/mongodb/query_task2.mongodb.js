@@ -23,7 +23,6 @@
 //      [ผลลัพธ์ (query) > ชื่อ] ต้องเป็น "Jane" และ "Doe"
 //      [ผลลัพธ์ (projection) > ออร์เดอร์] ต้องแสดงผล (:1) order_date และ total_price ปิด (:0) _id
 //      
-//
 
 db.orders.find(
   { 
