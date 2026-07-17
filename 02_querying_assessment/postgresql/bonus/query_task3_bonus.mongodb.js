@@ -22,9 +22,10 @@
 // >>>  [จากคำใบ้] > ข้อมูลพนักงานพร้อม first_name และ last_name
 //      [สำหรับ mongoDB] 0.สร้าง DB แบบ PGSQL
 //                      1.ใช้ .aggregate ตามแบบ mongo (รวมการกรองข้อมูลแทน find)
-//                      2.กรองข้อมูลพนักงาน ตำแหน่ง (role) = cook
-//
-//      [ผลลัพธ์] > 
+//                      2.$group ตามรหัสพนักงาน
+//                      3.$project สร้างฟิลด์ใหม่จากชื่อ (รวมชื่อ)
+//                      4.$sort เรียงลำดับ จากมากไปน้อย (-1)
+//      [ผลลัพธ์] > ชื่อ และจำนวนออร์เดอร์
 //
 
 db.orders.aggregate([
@@ -56,9 +57,7 @@ db.orders.aggregate([
 //   { "full_name": "Emily Jones", "total_orders": 7 },
 //   { "full_name": "John Smith", "total_orders": 4 }
 // ]
-
-
-
+//
 // Staff
 // db.staff.insertMany([
 //   { staff_id: 1, first_name: "Jane", last_name: "Doe", role: "Cashier" },
