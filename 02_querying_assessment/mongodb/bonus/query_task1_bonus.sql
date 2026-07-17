@@ -17,8 +17,8 @@
 -- Write in English or Thai. Do not skip this step.
 --
 -- Your thinking : [โจทย์] เจ้าของร้านต้องการโปรโมชั่น โดยมีเงื่อนไขว่าต้องมีราคาต่ำกว่า 10$
---     >>> [จากคำใบ้] > สร้างข้อมูลแบบ PostgreSQL
---      [สำหรับ PGSQL] 0.เปลี่ยน mongo เป็นแบบ PGSQL
+--     >>> [จากคำใบ้] > สร้างข้อมูลแบบ PostgreSQL ตามลำดับฟิลด์ item_id, name, description, price, category
+--      [สำหรับ PGSQL] 0.เปลี่ยน mongo เป็นแบบ PGSQL 
 --                    1.กรองฟิลด์ name และ price ด้วย SELECT
 --                    2.จากตาราง menuitems (FROM) ด้วยเงื่อนไขราคาน้อยกว่า $10
 --      [ผลลัพธ์] ต้องเป็น Classic Fries , Onion Rings , Soda , Bottled เพราะราคาน้อยกว่า $10

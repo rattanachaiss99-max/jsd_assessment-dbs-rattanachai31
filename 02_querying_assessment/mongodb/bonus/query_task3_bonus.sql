@@ -17,8 +17,8 @@
 -- Write in English or Thai. Do not skip this step.
 --
 -- Your thinking:[โจทย์] ผู้จัดการต้องการสต็อกตั้งแต่ 100 ขึ้นไป จะได้ไม่ต้องสั่งเพิ่ม
---     >>> [จากคำใบ้] >>> สร้างข้อมูลแบบ PostgreSQ ข้อมูลที่ต้องการอยู่ใน ingredients
---      [สำหรับ PGSQL] 0.เปลี่ยน mongo เป็นแบบ PGSQL 
+--     >>> [จากคำใบ้] >>> สร้างข้อมูลแบบ PostgreSQ ตามลำดับฟิลด์ ingredient_id, name, stock_level, unit, supplier_id
+--      [สำหรับ PGSQL] 0.เปลี่ยน mongo เป็นแบบ PGSQL เริ่มที่ลำดับ 21
 --                    1.หาชื่อวัตถุดิบจากจาก ตาราง Ingredients
 --                    2.สร้างเงื่อนไข ในการกรองข้อมูลเมื่อ stock_level >= 100
 --      [ผลลัพธ์ (query) > ชื่อ] ต้องเป็น วัตถุดิบที่มากกว่า 100 หรือ เท่ากับ 100
@@ -27,6 +27,18 @@
 SELECT name 
 FROM Ingredients
 WHERE stock_level >= 100;
+
+-- INSERT INTO Ingredients (ingredient_id, name, stock_level, unit, supplier_id) VALUES
+-- (21, 'Beef Patty', 200.00, 'units', 1),
+-- (22, 'Veggie Patty', 100.00, 'units', 1),
+-- (23, 'Burger Bun', 300.00, 'units', 2),
+-- (24, 'Lettuce', 20.00, 'heads', 3),
+-- (25, 'Tomato', 50.00, 'units', 3),
+-- (26, 'Cheese Slice', 400.00, 'slices', 1),
+-- (27, 'Bacon', 150.00, 'strips', 1),
+-- (28, 'Special Sauce', 10.00, 'liters', 3),
+-- (29, 'Potatoes', 100.00, 'kg', 3),
+-- (30, 'Onions', 25.00, 'kg', 3);
 
 -- [
 --   {

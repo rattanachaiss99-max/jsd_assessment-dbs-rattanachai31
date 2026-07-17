@@ -18,7 +18,7 @@
 -- Write in English or Thai. Do not skip this step.
 --
 -- Your thinking : [โจทย์] ผู้จัดการต้องการดูประวัติ ออร์เดอร์ของพนักงาน "Jane Doe" เพื่อประเมิน
---     >>> [จากคำใบ้] > สร้างข้อมูลแบบ PostgreSQL ตารางที่เกี่ยวข้อง Orders และ Staff
+--     >>> [จากคำใบ้] > สร้างข้อมูลแบบ PostgreSQL ตามลำดับฟิลด์ order_id, order_date, total_price, staff_id และ staff_id, first_name, last_name, role สำหรับ staff
 --      [สำหรับ PGSQL] 0.เปลี่ยน mongo เป็นแบบ PGSQL เริ่มต้นที่ไอดี 41 (ออร์เดอร์เริ่มต้นที่ _id: ObjectId("634d00000000000000000041") ออร์เดอร์) , พนักงานเริ่มต้นที่ 11
 --                    1.การหาออร์เดอร์ทั้งหมด หาข้อมูลวันที่ และ ราคารวม 
 --                    2.การหาข้อมูลพนักงานทั้งหมด 
